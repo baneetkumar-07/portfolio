@@ -1,91 +1,288 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Baneet Kumar | Frontend Engineer</title>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<script src="script.js"></script>
-</head>
-<body>
-<header><div class="wrap"><nav>
-  <div class="l"><b>Baneet Kumar</b><a class="h" href="#skills">Skills</a><a class="h" href="#work">Work</a><a class="h" href="#projects">Projects</a><a class="h" href="#education">Education</a></div>
-  <button class="icon" id="theme" aria-label="Toggle dark mode">Dark mode</button>
-</nav></div></header>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Baneet Kumar | Frontend Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="wrap">
+        <nav>
+          <div class="brand">
+            <span
+              ><img id="profile" src="/Baneet.PNG" alt="Baneet Kumar"
+            /></span>
+            <b>Baneet Kumar</b>
+          </div>
+          <div class="nav-links">
+            <a class="h" href="#skills">Skills</a>
+            <a class="h" href="#work">Work</a>
+            <a class="h" href="#projects">Projects</a>
+            <a class="h" href="#education">Education</a>
+          </div>
+          <button class="theme-toggle" id="theme" aria-label="Toggle dark mode">
+            <span class="theme-icon">🌙</span>
+            <span class="theme-text">Dark</span>
+          </button>
+        </nav>
+      </div>
+    </header>
 
-<main>
-<div class="wrap hero">
-  <div>
-    <h1>Frontend-deep. Backend-aware.</h1>
-    <p>I'm Baneet, a Software Development Engineer II at Deloitte USI with 4+ years of building React and Next.js products, from microfrontend platforms to real-time dashboards and AI chat interfaces.</p>
-    <div class="btns">
-      <a class="btn" href="https://www.linkedin.com/in/baneet-kumar" target="_blank" rel="noopener">LinkedIn</a>
-      <a class="btn g" href="https://github.com/baneetkumar-07" target="_blank" rel="noopener">GitHub</a>
-    </div>
-  </div>
-  <div class="t" aria-label="T-shaped skill profile: broad base, deep frontend specialty">
-    <div class="bar">Breadth: Node.js, system design</div>
-    <div class="stem">Depth: Frontend</div>
-  </div>
-</div>
+    <main>
+      <section class="hero-section">
+        <div class="wrap hero">
+          <div class="hero-content">
+            <div class="status-badge">Available for senior roles</div>
+            <h1>
+              Frontend-deep.<br /><span class="highlight">Backend-aware.</span>
+            </h1>
+            <p class="hero-bio">
+              I'm Baneet, a Software Development Engineer II at Deloitte USI
+              with 4+ years of building React and Next.js products, from
+              microfrontend platforms to real-time dashboards and AI chat
+              interfaces.
+            </p>
+            <div class="btns">
+              <a
+                class="btn primary"
+                href="https://www.linkedin.com/in/baneet-kumar"
+                target="_blank"
+                rel="noopener"
+                >LinkedIn</a
+              >
+              <a
+                class="btn secondary"
+                href="https://github.com/baneetkumar-07"
+                target="_blank"
+                rel="noopener"
+                >GitHub</a
+              >
+            </div>
+          </div>
 
-<section id="skills"><div class="wrap">
-  <h2>Skills</h2>
-  <div class="skills">
-    <div class="card deep"><h3>Deep: frontend</h3>
-      <div class="tags"><span>React</span><span>Next.js</span><span>TypeScript</span><span>Redux Toolkit</span><span>Microfrontends</span><span>Hooks and state management</span><span>CI/CD</span><span>Adobe Experience Manager</span></div></div>
-    <div class="card wide"><h3>Growing: backend and systems</h3>
-      <div class="tags"><span>Node.js</span><span>Express</span><span>MongoDB</span><span>REST APIs</span><span>System design</span><span>Streaming APIs</span></div></div>
-  </div>
-</div></section>
+          <div
+            class="t-profile-card"
+            aria-label="T-shaped skill profile: broad base, deep frontend specialty"
+          >
+            <div class="t-badge">Skill Topology</div>
+            <div class="bar">
+              <span class="label">Breadth</span>
+              <span>Node.js &bull; System Design &bull; DSA</span>
+            </div>
+            <div class="stem">
+              <span class="label">Depth</span>
+              <span class="center">Frontend Architecture</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
-<section id="work"><div class="wrap">
-  <h2>Work</h2>
-  <div class="grid">
-    <div class="card"><h3>Deloitte USI</h3><div class="meta">Software Development Engineer II</div>
-      <p>Frontend engineering across enterprise client platforms, including microfrontend architecture spanning 4+ services.</p></div>
-    <div class="card"><h3>DecisionIQ</h3><div class="meta">AI-powered BI chatbot for Pfizer</div>
-      <p>Chat interface with streaming responses, role-based access control and single sign-on.</p>
-      <div class="tags"><span>Next.js</span><span>Streaming APIs</span><span>RBAC</span><span>SSO</span></div></div>
-    <div class="card"><h3>Spectrum</h3><div class="meta">Real-time device health monitoring</div>
-      <p>Live dashboard that tracks the health of connected devices.</p>
-      <div class="tags"><span>React</span><span>Real-time data</span></div></div>
-    <div class="card"><h3>Royal Caribbean</h3><div class="meta">Client engagement</div>
-      <p>About two years of hands-on Adobe Experience Manager work.</p>
-      <div class="tags"><span>AEM</span></div></div>
-    <div class="card"><h3>Amgen</h3><div class="meta">Client engagement</div>
-      <p>Frontend delivery for a life-sciences client.</p></div>
-  </div>
-</div></section>
+      <section id="skills">
+        <div class="wrap">
+          <div class="section-header">
+            <h2>Technical Focus</h2>
+            <p>Core specializations and areas of active growth</p>
+          </div>
+          <div class="skills-grid">
+            <div class="card skill-card deep">
+              <div class="card-header">
+                <h3>Specialty</h3>
+                <span class="badge yellow">Primary</span>
+              </div>
+              <p class="card-desc">
+                Production-proven experience in high-scale web platforms
+              </p>
+              <div class="tags">
+                <span>React</span><span>Next.js</span><span>TypeScript</span
+                ><span>Redux Toolkit</span><span>Microfrontends</span
+                ><span>REST APIs</span><span>Hooks & State</span
+                ><span>CI/CD</span><span>Adobe Experience Manager</span>
+                <span>System Design</span><span>Web Performance</span>
+                <span>Accessibility</span><span>Testing & QA</span>
+                <span>Data Structures & Algorithms</span>
+              </div>
+            </div>
+            <div class="card skill-card wide">
+              <div class="card-header">
+                <h3>System Design & Backend</h3>
+                <span class="badge blue">Growing</span>
+              </div>
+              <p class="card-desc">
+                Architectural understanding for end-to-end delivery
+              </p>
+              <div class="tags">
+                <span>Node.js</span><span>Express</span><span>MongoDB</span
+                ><span>Streaming APIs</span><span>Database</span>
+              </div>
+            </div>
+            <div class="card skill-card deep">
+              <div class="card-header">
+                <h3>Certifications</h3>
+                <span class="badge green">Primary</span>
+              </div>
+              <p class="card-desc">
+                AI certifications and fundamentals for modern web development
+              </p>
+              <div class="tags">
+                <span>Calude code 101</span><span>Calude certified Developer</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
-<section id="projects"><div class="wrap">
-  <h2>Projects</h2>
-  <div class="grid">
-    <div class="card"><h3>Russ AI Chatbot</h3><p>An AI chatbot project.</p>
-      <div class="tags"><a class="btn g" href="https://github.com/baneetkumar-07/Russ-Ai-chatbot" target="_blank" rel="noopener">View code</a></div></div>
-    <div class="card"><h3>Myshop</h3><p>A shopping front end.</p>
-      <div class="tags"><a class="btn g" href="https://github.com/baneetkumar-07/Myshop" target="_blank" rel="noopener">View code</a></div></div>
-    <div class="card"><h3>Frontend Website Demo</h3><p>A demo website built with frontend fundamentals.</p>
-      <div class="tags"><a class="btn g" href="https://github.com/baneetkumar-07/Frontend-website-Demo" target="_blank" rel="noopener">View code</a></div></div>
-  </div>
-</div></section>
+      <section id="work">
+        <div class="wrap">
+          <div class="section-header">
+            <h2>Experience</h2>
+            <p>Enterprise and high-impact project engineering</p>
+          </div>
+          <div class="grid">
+            <div class="card featured">
+              <div class="card-header">
+                <h3>Deloitte USI</h3>
+                <span class="time-badge">Current</span>
+              </div>
+              <div class="meta">Software Development Engineer II</div>
+              <p>
+                Frontend engineering across enterprise client platforms,
+                including microfrontend architecture spanning 4+ services.
+              </p>
+            </div>
+            <div class="card">
+              <h3>DecisionIQ</h3>
+              <div class="meta">AI-powered Business chatbot for Pfizer</div>
+              <p>
+                Chat interface with streaming responses, role-based access
+                control and single sign-on.
+              </p>
+              <div class="tags">
+                <span>Next.js</span><span>React</span><span>Streaming APIs</span><span>RBAC</span
+                ><span>SSO</span><span>LLM Integration</span>
+              </div>
+            </div>
+            <div class="card">
+              <h3>Spectrum</h3>
+              <div class="meta">Real-time device health monitoring</div>
+              <p>Live dashboard that tracks the health of connected devices.</p>
+              <div class="tags">
+                <span>React</span><span>Real-time Data</span><span>Redux</span><span>REST API's</span>
+                <span>MicroFrontends</span><span>Jest</span><span>RTL</span>
+              </div>
+            </div>
+            <div class="card">
+              <h3>Royal Caribbean</h3>
+              <div class="meta">Client engagement</div>
+              <p>One year of hands-on Adobe Experience Manager, authoring and editing template containers </p>
+              <div class="tags"><span>AEM</span><span>React</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-<section id="education"><div class="wrap">
-  <h2>Education and activities</h2>
-  <div class="grid">
-    <div class="card"><h3>B.Tech, Electrical Engineering</h3><div class="meta">NIT Hamirpur, 2018 to 2022</div><p>CGPA 8.14.</p></div>
-    <div class="card"><h3>Highlights</h3>
-      <ul>
-        <li>Represented India at GGMUN 2.0, Thailand (2020).</li>
-        <li>2nd prize, National Science Exhibition, Chhattisgarh.</li>
-        <li>Secretary of ELSOC, a 100+ member engineering society.</li>
-        <li>Class Representative, Electrical Engineering.</li>
-      </ul></div>
-  </div>
-</div></section>
-</main>
+      <section id="projects">
+        <div class="wrap">
+          <div class="section-header">
+            <h2>Featured Projects</h2>
+            <p>Open-source work and personal applications</p>
+          </div>
+          <div class="grid thirds">
+            <div class="card project-card">
+              <h3>Russ AI Chatbot</h3>
+              <p>
+                An interactive AI chatbot application leveraging streaming
+                responses and modern UI patterns.
+              </p>
+              <div class="card-action">
+                <a
+                  class="btn-link"
+                  href="https://github.com/baneetkumar-07/Russ-Ai-chatbot"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  View Repository &rarr;
+                </a>
+              </div>
+            </div>
+            <div class="card project-card">
+              <h3>Frontend Website Demo</h3>
+              <p>
+                A comprehensive demonstration site highlighting core modern web
+                performance fundamentals.
+              </p>
+              <div class="card-action">
+                <a
+                  class="btn-link"
+                  href="https://github.com/baneetkumar-07/Frontend-website-Demo"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  View Repository &rarr;
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-<footer><div class="wrap">Baneet Kumar. Find me on <a href="https://www.linkedin.com/in/baneet-kumar" target="_blank" rel="noopener">LinkedIn</a> or <a href="https://github.com/baneet-kumar" target="_blank" rel="noopener">GitHub</a>.</div></footer>
-</body>
+      <section id="education">
+        <div class="wrap">
+          <div class="section-header">
+            <h2>Education & Leadership</h2>
+          </div>
+          <div class="grid halves">
+            <div class="card">
+              <h3>B. Tech, Electrical Engineering</h3>
+              <div class="meta">NIT Hamirpur &bull; 2018 – 2022</div>
+              <p>
+                Graduated with 8.1 CGPA. Focused on software fundamentals and
+                engineering principles.
+              </p>
+            </div>
+            <div class="card">
+              <h3>Leadership & Achievements</h3>
+              <ul class="styled-list">
+                <li>Represented India at GGMUN 2.0, Thailand (2020)</li>
+                <li>2nd prize, National Science Exhibition, Chhattisgarh</li>
+                <li>Secretary of ELSOC, a 100+ member engineering society</li>
+                <li>Class Representative, Electrical Engineering</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap footer-content">
+        <div>Made with ❤️ by Baneet Kumar</div>
+        <div class="footer-links">
+          <a
+            href="https://www.linkedin.com/in/baneet-kumar"
+            target="_blank"
+            rel="noopener"
+            >LinkedIn</a
+          >
+          &bull;
+          <a
+            href="https://github.com/baneetkumar-07"
+            target="_blank"
+            rel="noopener"
+            >GitHub</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
